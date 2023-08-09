@@ -3,13 +3,13 @@ pipeline {
   stages {
     stage('Parallel execution') {
       parallel {
-        stage('hellow world') {
+        stage('hello world') {
           steps {
             sh 'echo "hello world"'
           }
         }
 
-        stage('') {
+        stage('error') {
           agent {
             docker {
               image 'gradle:6-jdk11'
