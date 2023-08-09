@@ -9,7 +9,7 @@ pipeline {
           }
         }
 
-        stage('error') {
+        stage('build-app') {
           agent {
             docker {
               image 'gradle:6-jdk11'
